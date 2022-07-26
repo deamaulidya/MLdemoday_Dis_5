@@ -31,7 +31,7 @@ def visualize(history):
     plt.show()
  
  
-#Fungsi untuk mengecek gambar tunggal
+#Fungsi untuk mengecek gambar/no label
 #Fungsi ini memberikan hasil berupa angka 0-25 yang bersesuaian dengan abjad A-Z (A=0...Z=25)
 def test_image(path, model=model):
     img = image.load_img(path, target_size=(100,100))
