@@ -34,7 +34,7 @@ def visualize(history):
 #Fungsi untuk mengecek gambar/no label
 #Fungsi ini memberikan hasil berupa angka 0-25 yang bersesuaian dengan abjad A-Z (A=0...Z=25)
 def test_image(path, model=model):
-    img = image.load_img(path, target_size=(100,100))
+    img = image.load_img(path, target_size=(300,300))
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
 
@@ -52,7 +52,7 @@ def test_folder(path,model=model):
     #preprocess data
     test_generator = test_datagen.flow_from_directory(
         path,
-        target_size=(100,100),
+        target_size=(300,300),
         class_mode='categorical',
         shuffle=False
     
