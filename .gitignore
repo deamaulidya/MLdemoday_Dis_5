@@ -1,2 +1,6 @@
 .vscode
-/alphabet
+/mypython
+/__pycache__
+/alphabet_bisindo
+/test
+*.h5
